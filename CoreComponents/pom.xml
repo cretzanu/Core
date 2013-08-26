@@ -8,7 +8,7 @@
   <artifactId>BusinessApps-Core</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
-  <name>Business Apps Core</name>
+  <name>Business Apps</name>
   <build>
 	<sourceDirectory>src</sourceDirectory>
   	<testSourceDirectory>test</testSourceDirectory>
