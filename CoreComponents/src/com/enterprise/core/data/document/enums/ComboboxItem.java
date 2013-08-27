@@ -1,0 +1,32 @@
+/**
+ * 	@author batrian
+ *	@version 
+ * 	@created 11:30:46
+ */
+package com.enterprise.core.data.document.enums;
+
+/**
+ * @author batrian
+ * 
+ */
+public class ComboboxItem {
+	private String text;
+	private String value;
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+}
