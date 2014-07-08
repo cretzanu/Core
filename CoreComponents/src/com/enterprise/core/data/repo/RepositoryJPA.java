@@ -18,7 +18,7 @@ import com.enterprise.core.data.search.engine.SearchEngineFactory;
  */
 public abstract class RepositoryJPA implements  Repository {
 	
-
+	EntityManager em;
 	
 	public void beginTransaction() {
 		this.getEm().getTransaction().begin();
@@ -115,9 +115,15 @@ public abstract class RepositoryJPA implements  Repository {
 	public SearchEngineFactory getSearchEngineFactory(){
 		return new SearchEngineFactory();
 	}
-	
-	protected abstract EntityManager getEm(); 
 
-	protected abstract void setEm(EntityManager em); 
+	public EntityManager getEm() {
+		return em;
+	}
+
+	public void setEm(EntityManager em) {
+		this.em = em;
+	}
+	
+	
 
 }
