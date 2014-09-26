@@ -14,7 +14,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -30,7 +29,8 @@ import org.hibernate.collection.PersistentCollection;
  */
 
 @MappedSuperclass
-public abstract class PersistentEntity implements Serializable,
+
+public abstract  class PersistentEntity implements Serializable,
 		Comparable<PersistentEntity> {
 
 	// fields used in search predicates
